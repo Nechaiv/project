@@ -1,0 +1,346 @@
+.top-center {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  width: auto;
+  height: 100vh;
+}
+
+.top-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.top-wrapper .top-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.row-head {
+  margin: 20px;
+}
+
+.initials {
+  max-width: 150px;
+  font-family: 'Waiting for the Sunrise', cursive;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.top-menu-wrapper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.top-menu-wrapper .top-menu {
+  padding-top: 10px;
+  padding-left: 19px;
+  width: 70px;
+  height: 60px;
+  background-color: black;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.top-menu-wrapper .top-menu .bar1, .top-menu-wrapper .top-menu .bar2, .top-menu-wrapper .top-menu .bar3 {
+  width: 35px;
+  height: 4px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.top-menu-wrapper .change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.top-menu-wrapper .change .bar2 {
+  opacity: 0;
+}
+
+.top-menu-wrapper .change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.top-center {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.top-center .text-center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.top-center .text-center .text-box {
+  display: table-raw;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.top-center .text-center .text-box h1 {
+  display: inline-block;
+  padding: 10px 35px;
+  color: #fff;
+  border: 6px solid #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.8em;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.top-center .text-center .text-box .title-addition {
+  color: gray;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 2.5em;
+}
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  min-height: 100vh;
+}
+
+section:first-child {
+  background-color: #f2f2f2;
+}
+
+section .section_header {
+  margin-bottom: 70px;
+  width: 100%;
+  min-height: 150px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+section .section_header::after {
+  content: '';
+  margin: auto;
+  margin-top: 50px;
+  width: 200px;
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+section .section_header h2 {
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+}
+
+section h3 {
+  margin-bottom: 40px;
+  text-align: center;
+  color: gray;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1em;
+}
+
+section .person {
+  margin: auto;
+  display: block;
+  width: 220px;
+  height: 220px;
+  text-align: center;
+}
+
+section .person .myimg {
+  width: inherit;
+  height: inherit;
+  background-image: url("https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/12715629_962209157189996_522425128663370423_n.jpg?oh=ba83e399c1b3e12806545a7391947032&oe=5A33E7A8");
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+section .animation_2 {
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: gray;
+}
+
+section .animation_2 p:last-child {
+  color: red;
+}
+
+section .personal-info #initials {
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #646568;
+}
+
+section .personal-info ul {
+  list-style: none;
+}
+
+section .personal-info ul li {
+  margin: 10px;
+  margin-left: 0;
+  font-size: 15px;
+}
+
+section .personal-info ul li:first-child {
+  margin-top: 30px;
+  color: black;
+}
+
+section .personal-info ul li a {
+  color: red;
+}
+
+section .left {
+  margin-top: 10px;
+  border-right: 1px solid lightgray;
+  text-align: right;
+}
+
+section .right {
+  margin-top: 10px;
+}
+
+section .resume-icon {
+  margin: 40px 20px;
+}
+
+section .year {
+  margin: 20px 10px;
+  padding: 0px 20px;
+  min-width: 90px;
+  display: inline-block;
+  font-style: italic;
+  background-color: #FF6347;
+  color: #fff;
+}
+
+section .resume_description strong {
+  font-size: 20px;
+}
+
+section .resume_description p {
+  margin: 10px 10px;
+  color: gray;
+}
+
+section .contact_box {
+  margin-bottom: 30px;
+  margin-left: 20px;
+  color: grey;
+}
+
+section .contact_box:last-child {
+  margin-bottom: 70px;
+}
+
+section .contact_box i {
+  color: #FF6347;
+}
+
+section .contact_box h3 {
+  margin: 10px;
+  margin-left: 0;
+  line-height: 15px;
+  text-align: left;
+  color: black;
+}
+
+section .form-group {
+  display: block;
+  margin-bottom: 20px;
+  color: gray;
+}
+
+section .form-group .star-sign {
+  font-weight: 700;
+  font-size: 18px;
+  color: red;
+}
+
+section .form-group input {
+  height: 50px;
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  line-height: 40px;
+  text-indent: 12px;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+section .form-group textarea {
+  height: 100px;
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  line-height: 40px;
+  text-indent: 12px;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+section button {
+  border: none;
+  color: #fff;
+  line-height: 40px;
+  padding: 0 25px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-top: 10px;
+  float: right;
+  background-color: tomato;
+}
+
+footer {
+  height: 100px;
+  background: black;
+  font-size: 17px;
+  line-height: 600%;
+  text-align: center;
+}
